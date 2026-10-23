@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exemplo de layout responsivo organizado com CSS Grid.">
+  <title>Layout Responsivo com CSS Grid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="grid-container">
+
+    <header class="header">
+      <div class="header__content">
+        <p class="eyebrow">Atividade de desenvolvimento web</p>
+        <h1>Layout Responsivo com CSS Grid</h1>
+      </div>
+    </header>
+
+    <nav class="menu" aria-label="Navegação principal">
+      <h2>Navegação</h2>
+
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre-grid">Sobre o CSS Grid</a></li>
+        <li><a href="#responsividade">Responsividade</a></li>
+      </ul>
+
+      <p class="menu__note">
+        Em telas menores que 768 px, este menu é ocultado.
+      </p>
+    </nav>
+
+    <main class="main" id="inicio">
+
+      <section class="intro" aria-labelledby="titulo-intro">
+        <p class="eyebrow">Uma estrutura que se adapta</p>
+
+        <h2 id="titulo-intro">
+          Organização simples para qualquer tela
+        </h2>
+
+        <p>
+          Esta página demonstra como o CSS Grid pode distribuir as áreas
+          de um site. Em telas grandes, o menu aparece ao lado do conteúdo.
+          Em telas pequenas, o menu desaparece e o conteúdo ocupa toda
+          a largura disponível.
+        </p>
+      </section>
+
+      <section class="info-grid" aria-label="Características do layout">
+
+        <article class="card" id="sobre-grid">
+          <span class="card__number">01</span>
+
+          <h3>Áreas bem definidas</h3>
+
+          <p>
+            A propriedade <code>grid-template-areas</code> nomeia e organiza
+            cabeçalho, menu, conteúdo principal e rodapé.
+          </p>
+        </article>
+
+        <article class="card" id="responsividade">
+          <span class="card__number">02</span>
+
+          <h3>Adaptação responsiva</h3>
+
+          <p>
+            Uma media query altera a estrutura do grid quando a largura
+            da tela é de 768 px ou menos.
+          </p>
+        </article>
+
+      </section>
+
+      <aside class="tip" aria-label="Dica">
+        <strong>Dica:</strong>
+        redimensione a janela do navegador para observar a mudança entre
+        o layout de duas colunas e o layout de uma coluna.
+      </aside>
+
+    </main>
+
+    <footer class="footer">
+      <p>
+        Atividade: Implementando layouts responsivos utilizando CSS Grid
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
